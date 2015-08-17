@@ -1,0 +1,17 @@
+<% if @user %>
+	<script type="text/javascript">
+		window.user = {
+			id: <%= @user.id.to_i %>,
+			username: '<%= @user.username.to_s %>'
+		}
+	</script>
+<% end %>
+
+<div class="left">
+	<h3>Users</h3>
+	<ul id="js-chat-users" class="chat__users"></ul>	
+</div>
+
+<div id="js-chat-messages-pane" class="right">
+	<ul id="js-chat-messages" class="chat__messages"></ul>
+</div>

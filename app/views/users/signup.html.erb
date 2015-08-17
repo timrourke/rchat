@@ -1,0 +1,36 @@
+<% if flash[:notice] %>
+  <div class="alert alert-info"><%= flash[:notice] %></div>
+<% end %>
+
+<% if flash[:alert] %>
+  <div class="alert alert-warning"><%= flash[:alert] %></div>
+<% end %>
+
+<section class="signup">
+	<h1>Sign Up</h1>
+
+	<%= form_for @user, url: {action: 'create'} do |f| %>
+		<label>
+			Name
+			<%= f.text_field :username %>	
+		</label><br>
+		
+		<label>
+			Email
+			<%= f.email_field :email %>
+		</label><br>
+		
+		<label>
+			Password
+			<%= f.password_field :password %>
+		</label><br>
+		
+		<label>
+			Confirm Password
+			<%= f.password_field :password_confirmation %>
+		</label><br>
+		
+		<%= f.submit 'Sign Up' %>
+
+	<% end %>
+</section>

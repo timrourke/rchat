@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rchat</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="outer-wrapper">
+	<header class="site-header">
+		<div class="site-utility-nav">
+			<h3 class="site-branding">
+				<a href="/" rel="bookmark">Rchat</a>
+			</h3>
+			<% if session[:user_id].nil? %>
+			<div class="site-login">
+				<a href="/users/signup">Sign Up</a>
+				<button class="js-form-login-toggle">Log in</button>
+				<%= form_tag({:controller => 'sessions', :action => 'login'}, :class => 'site-login-form')  do %>
+
+					<h2>Log In</h2>
+
+					<label>
+						Email
+						<%= email_field_tag :email %>
+					</label>
+					
+					<label>
+						Password
+						<%= password_field_tag :password %>	
+					</label>
+					
+					<%= submit_tag 'Log in' %>
+
+					<div class="js-form-login-toggle button--close">×</div>
+				<% end %>
+			</div>
+			<% else %>
+			<div class="site-logout">
+				<a href="/users/logout">Log Out</a>
+			</div>
+			<% end %>
+		</div>
+		
+	</header>
+
+	<% if flash[:notice] %>
+	  <div class="alert alert-info"><%= flash[:notice] %></div>
+	<% end %>
+
+	<% if flash[:alert] %>
+	  <div class="alert alert-warning"><%= flash[:alert] %></div>
+	<% end %>
+
+	<main class="wrapper">
+		<%= yield %>	
+	</main>
+	<% if !session[:user_id].nil? %>
+	<form class="chat__input-form" id="js-chat-input-form" action="#0">
+		<input class="chat__input-text" id="js-chat-input" type="text">
+		<input class="chat__input-submit" id="js-chat-submit" type="submit" value="Send">
+	</form>
+	<% end %>
+	<div class="site-footer">
+		<div class="footer-wrapper">
+			<p class="copyright">&copy; <%= Time.now.year %> Tim Rourke</p>	
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" async>
+  WebFontConfig = {
+    google: { families: [ 'Roboto+Slab::latin', 'Roboto:400,300,300italic,400italic,700,700italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+ </script>
+
+</body>
+</html>
