@@ -1,28 +1,7 @@
-== README
+== RChat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple websockets chat platform built with Ruby on Rails.
 
-Things you may want to cover:
+Rchat is an exploration of using websockets in a Ruby on Rails context. This simple app provides a single-room chat server with basic user authentication. It is as no-frills as a chat server can get.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Whee!
