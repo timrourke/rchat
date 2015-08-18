@@ -20,7 +20,7 @@ $(document).on('ready', function() {
 	var user = window.user || undefined;
 
 	if (user) {
-		var dispatcher = new WebSocketRails('localhost:3000/websocket');
+		var dispatcher = new WebSocketRails(window.location.hostname + '/websocket');
 
 		var channel = dispatcher.subscribe('chatroom');
 

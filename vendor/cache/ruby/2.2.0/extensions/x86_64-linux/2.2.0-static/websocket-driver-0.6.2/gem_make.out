@@ -1,0 +1,11 @@
+/home/tim/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20150817-30279-1q8vojv.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20150817-30279-yvfys4

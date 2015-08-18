@@ -1,0 +1,613 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+/* line 1, /var/www/rchat/app/assets/stylesheets/forms.scss */
+form {
+  padding: 2em 2em 1.2em 2em;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0.25));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0.25));
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.125);
+  margin-bottom: 1em;
+}
+/* line 6, /var/www/rchat/app/assets/stylesheets/forms.scss */
+table form {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+  background: none;
+}
+
+/* line 15, /var/www/rchat/app/assets/stylesheets/forms.scss */
+table {
+  width: 100%;
+  padding: 2em;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0.25));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0.25));
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 23, /var/www/rchat/app/assets/stylesheets/forms.scss */
+form, table {
+  border-radius: 0.25em;
+}
+
+/* line 27, /var/www/rchat/app/assets/stylesheets/forms.scss */
+tbody,
+theader,
+tfooter {
+  width: 100%;
+  padding: 1em;
+}
+
+/* line 34, /var/www/rchat/app/assets/stylesheets/forms.scss */
+tr:nth-child(2n+2) {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* line 38, /var/www/rchat/app/assets/stylesheets/forms.scss */
+th {
+  text-align: left;
+}
+
+/* line 42, /var/www/rchat/app/assets/stylesheets/forms.scss */
+th, td {
+  padding: 0.5em;
+  border: 0;
+}
+
+/* line 47, /var/www/rchat/app/assets/stylesheets/forms.scss */
+label {
+  width: 100%;
+  display: block;
+  margin-bottom: 1.5em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #667;
+}
+
+/* line 56, /var/www/rchat/app/assets/stylesheets/forms.scss */
+input {
+  width: 100%;
+  display: block;
+  height: 3em;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  outline: none;
+  border: 1px solid white;
+  background-color: #eeeeff;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+/* line 66, /var/www/rchat/app/assets/stylesheets/forms.scss */
+input:focus {
+  background-color: white;
+  border: 1px solid #eeeeff;
+}
+
+/* line 72, /var/www/rchat/app/assets/stylesheets/forms.scss */
+button, input[type="submit"] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0.075em solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.25em;
+  background: -webkit-linear-gradient(top, #78a, #468);
+  background: linear-gradient(to bottom, #78a, #468);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  height: 3em;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  margin-top: 0;
+  display: inline-block;
+  width: inherit;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+/* line 92, /var/www/rchat/app/assets/stylesheets/forms.scss */
+td button, td input[type="submit"] {
+  margin-bottom: 0;
+}
+/* line 95, /var/www/rchat/app/assets/stylesheets/forms.scss */
+button::before, input[type="submit"]::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: -30%;
+  width: 20%;
+  height: 100%;
+  background: -webkit-radial-gradient(50% 50%, circle, rgba(255, 255, 255, 0.5), transparent);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), transparent);
+  -webkit-transform: translateX(0) skewX(25deg);
+      -ms-transform: translateX(0) skewX(25deg);
+          transform: translateX(0) skewX(25deg);
+  -webkit-transition: all 0 ease-out;
+          transition: all 0 ease-out;
+}
+/* line 107, /var/www/rchat/app/assets/stylesheets/forms.scss */
+button:hover, input[type="submit"]:hover {
+  cursor: pointer;
+}
+/* line 110, /var/www/rchat/app/assets/stylesheets/forms.scss */
+button:hover::before, input[type="submit"]:hover::before {
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+  -webkit-transform: translateX(700%) skewX(25deg);
+      -ms-transform: translateX(700%) skewX(25deg);
+          transform: translateX(700%) skewX(25deg);
+  opacity: 0;
+}
+
+/* line 117, /var/www/rchat/app/assets/stylesheets/forms.scss */
+.site-utility-nav .js-form-login-toggle {
+  float: right;
+  padding: 0.25em;
+  height: 2.25em;
+}
+
+/* line 123, /var/www/rchat/app/assets/stylesheets/forms.scss */
+.site-login-form {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-300%);
+      -ms-transform: translateX(-50%) translateY(-300%);
+          transform: translateX(-50%) translateY(-300%);
+  z-index: 1000;
+  background-color: white;
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+
+/* line 133, /var/www/rchat/app/assets/stylesheets/forms.scss */
+.site-login-form.open {
+  -webkit-transform: translateX(-50%) translateY(50%);
+      -ms-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+  z-index: 1000;
+}
+
+/* line 138, /var/www/rchat/app/assets/stylesheets/forms.scss */
+.js-form-login-toggle.button--close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  border: 1px solid #444;
+  border-radius: 50%;
+  padding: 0.25em;
+  font-size: 1.5em;
+  height: 1.25em;
+  width: 1.25em;
+  text-align: center;
+  line-height: 0.75em;
+  -webkit-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
+}
+/* line 151, /var/www/rchat/app/assets/stylesheets/forms.scss */
+.js-form-login-toggle.button--close:hover {
+  color: #5CAAFF;
+  border: 1px solid #5CAAFF;
+  cursor: pointer;
+  -webkit-transform: rotateZ(720deg);
+          transform: rotateZ(720deg);
+}
+
+/* line 159, /var/www/rchat/app/assets/stylesheets/forms.scss */
+.signup {
+  text-align: center;
+  padding: 0 1em;
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+}
+/* line 165, /var/www/rchat/app/assets/stylesheets/forms.scss */
+.signup form {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 20em;
+  text-align: left;
+}
+
+/* line 1, /var/www/rchat/app/assets/stylesheets/main.scss */
+.clearfix:after, .site-utility-nav:after, nav ul:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 9, /var/www/rchat/app/assets/stylesheets/main.scss */
+.clearfix, .site-utility-nav, nav ul {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 11, /var/www/rchat/app/assets/stylesheets/main.scss */
+* html .clearfix, * html .site-utility-nav, * html nav ul, nav * html ul {
+  height: 1%;
+}
+
+/* line 12, /var/www/rchat/app/assets/stylesheets/main.scss */
+.clearfix, .site-utility-nav, nav ul {
+  display: block;
+}
+
+/* close commented backslash hack */
+/* line 15, /var/www/rchat/app/assets/stylesheets/main.scss */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 21, /var/www/rchat/app/assets/stylesheets/main.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 27, /var/www/rchat/app/assets/stylesheets/main.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #345;
+}
+
+/* line 32, /var/www/rchat/app/assets/stylesheets/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+/* line 36, /var/www/rchat/app/assets/stylesheets/main.scss */
+a {
+  color: #5CAAFF;
+  text-decoration: none;
+}
+
+/* line 41, /var/www/rchat/app/assets/stylesheets/main.scss */
+.outer-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 49, /var/www/rchat/app/assets/stylesheets/main.scss */
+.wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 55, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-utility-nav {
+  position: relative;
+  padding: 0.5em 1.25em;
+  background-color: #294A6E;
+  font-size: 0.8em;
+}
+/* line 61, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-utility-nav h2 {
+  margin-top: 0;
+  text-align: center;
+}
+/* line 65, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-utility-nav form {
+  float: right;
+}
+/* line 68, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-utility-nav input[type="submit"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 73, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-utility-nav button {
+  margin-bottom: 0;
+}
+
+/* line 78, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-header__main {
+  padding: 1em;
+}
+
+/* line 82, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-branding {
+  float: left;
+  margin: 0.25em 0 0 0;
+}
+/* line 85, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-branding a {
+  text-decoration: none;
+}
+
+/* line 90, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-nav {
+  margin-top: 2.5em;
+  float: right;
+}
+
+/* line 95, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-login {
+  float: right;
+}
+
+/* line 99, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-login a {
+  display: block;
+  float: left;
+  margin-right: 1em;
+  padding-top: 0.5em;
+}
+
+/* line 106, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-logout {
+  float: right;
+}
+/* line 108, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-logout a {
+  display: block;
+  padding-top: 0.5em;
+}
+
+/* line 114, /var/www/rchat/app/assets/stylesheets/main.scss */
+.intro {
+  text-align: center;
+}
+
+/* line 118, /var/www/rchat/app/assets/stylesheets/main.scss */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 123, /var/www/rchat/app/assets/stylesheets/main.scss */
+nav ul li {
+  float: left;
+  display: block;
+  margin-left: 1em;
+}
+
+/* line 130, /var/www/rchat/app/assets/stylesheets/main.scss */
+.site-footer {
+  background: -webkit-linear-gradient(top, #294A6E, #0d1824);
+  background: linear-gradient(to bottom, #294A6E, #0d1824);
+  color: #5CAAFF;
+  font-size: 0.6em;
+  padding: 1em 1.5em;
+  min-height: 1em;
+}
+
+/* line 138, /var/www/rchat/app/assets/stylesheets/main.scss */
+.copyright {
+  margin: 0;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    padding: 0 1em;
+    margin: 0 auto;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    padding: 0 1em;
+    margin: 0 auto;
+  }
+}
+/* line 153, /var/www/rchat/app/assets/stylesheets/main.scss */
+.alert {
+  -webkit-animation-timing-function: cubic-bezier(0.1, 0.1, 0.1, 0.1, 0.1, 1);
+  animation-timing-function: cubic-bezier(0.1, 0.1, 0.1, 0.1, 0.1, 1);
+  -webkit-animation: fade-out 2s;
+  animation: fade-out 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: hidden;
+  height: 3em;
+  width: 100%;
+}
+
+/* line 170, /var/www/rchat/app/assets/stylesheets/main.scss */
+.alert-info {
+  background-color: #abe;
+  outline: 1px solid #457;
+}
+
+/* line 175, /var/www/rchat/app/assets/stylesheets/main.scss */
+.alert-warning {
+  background-color: #ecb;
+  outline: 1px solid #c89;
+}
+
+/* line 180, /var/www/rchat/app/assets/stylesheets/main.scss */
+.intro-text {
+  font-weight: 300;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), -webkit-linear-gradient(top, rgba(41, 74, 110, 0.5), rgba(41, 74, 110, 0.5)), url("/images/background.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(41, 74, 110, 0.5), rgba(41, 74, 110, 0.5)), url("/images/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+/* line 192, /var/www/rchat/app/assets/stylesheets/main.scss */
+.intro {
+  color: white;
+  font-size: 125%;
+  padding: 0 1em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+/* line 193, /var/www/rchat/app/assets/stylesheets/main.scss */
+.intro h1 {
+  font-size: 200%;
+  margin-top: 0;
+}
+
+/* line 1, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.left, .right {
+  padding: 0 1em;
+  overflow-y: auto;
+}
+
+/* line 6, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 10em;
+  max-width: 20%;
+  background-image: -webkit-linear-gradient(top, #254363, #294A6E 1.5em);
+  background-image: linear-gradient(to bottom, #254363, #294A6E 1.5em);
+  color: #457cb8;
+}
+
+/* line 14, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.right {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3 1 auto;
+      -ms-flex: 3 1 auto;
+          flex: 3 1 auto;
+  max-width: 80%;
+  background-image: -webkit-linear-gradient(top, #2d5179, #305681 1.5em);
+  background-image: linear-gradient(to bottom, #2d5179, #305681 1.5em);
+}
+
+/* line 20, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.chat__messages,
+.chat__users {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 27, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.chat__messages {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  color: #5CAAFF;
+}
+/* line 31, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.chat__messages .chat__self,
+.chat__messages .chat__self * {
+  color: white;
+}
+/* line 35, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.chat__messages .chat__system,
+.chat__messages .chat__system * {
+  color: #99c;
+}
+
+/* line 41, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+form.chat__input-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 3em;
+  margin-bottom: 0;
+  padding: 0.5em;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  background-image: -webkit-linear-gradient(top left, #5CAAFF, #294A6E);
+  background-image: linear-gradient(to bottom right, #5CAAFF, #294A6E);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  border-radius: 0;
+}
+
+/* line 54, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+.chat__input-text {
+  margin-top: 0;
+}
+
+/* line 58, /var/www/rchat/app/assets/stylesheets/chatroom.scss */
+input[type="submit"].chat__input-submit {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 6em;
+      -ms-flex: 0 0 6em;
+          flex: 0 0 6em;
+  margin-bottom: 0;
+}

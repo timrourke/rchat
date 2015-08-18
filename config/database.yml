@@ -20,6 +20,7 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  host: localhost
 
 development:
   <<: *default
@@ -80,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: vacation-destination_production
-  username: vacation-destination
-  password: <%= ENV['VACATION-DESTINATION_DATABASE_PASSWORD'] %>
+  database: rchat
+  username: rchat
+  password: <%= ENV['RCHAT_DATABASE_PASSWORD'] %>

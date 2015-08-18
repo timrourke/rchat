@@ -1,0 +1,317 @@
+I, [2015-08-17T15:18:53.480937 #21080]  INFO -- : Refreshing Gem list
+I, [2015-08-17T15:18:55.445698 #21080]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-17T15:18:55.445884 #21080]  INFO -- : worker=0 spawning...
+I, [2015-08-17T15:18:55.448340 #21080]  INFO -- : worker=1 spawning...
+I, [2015-08-17T15:18:55.448939 #21083]  INFO -- : worker=0 spawned pid=21083
+I, [2015-08-17T15:18:55.451082 #21080]  INFO -- : master process ready
+I, [2015-08-17T15:18:55.452345 #21086]  INFO -- : worker=1 spawned pid=21086
+I, [2015-08-17T15:18:55.455391 #21086]  INFO -- : worker=1 ready
+I, [2015-08-17T15:18:55.456437 #21083]  INFO -- : worker=0 ready
+I, [2015-08-17T15:19:19.589143 #21105]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-17T15:19:19.589414 #21105]  INFO -- : forked child re-executing...
+I, [2015-08-17T15:19:20.023448 #21105]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-17T15:19:20.025691 #21105]  INFO -- : Refreshing Gem list
+I, [2015-08-17T15:19:22.616419 #21105]  INFO -- : worker=0 spawning...
+I, [2015-08-17T15:19:22.618435 #21105]  INFO -- : worker=1 spawning...
+I, [2015-08-17T15:19:22.619498 #21110]  INFO -- : worker=0 spawned pid=21110
+I, [2015-08-17T15:19:22.622900 #21105]  INFO -- : master process ready
+I, [2015-08-17T15:19:22.623696 #21110]  INFO -- : worker=0 ready
+I, [2015-08-17T15:19:22.623879 #21113]  INFO -- : worker=1 spawned pid=21113
+I, [2015-08-17T15:19:22.626278 #21113]  INFO -- : worker=1 ready
+E, [2015-08-17T15:33:06.694461 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T15:36:53.823526 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T15:46:44.743972 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T15:48:23.898116 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T15:52:03.770426 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T15:52:51.754723 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T15:53:40.628600 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T15:57:13.547580 #21105] ERROR -- : old PID:21080 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2015-08-17T16:00:03.601703 #21105]  INFO -- : reaped #<Process::Status: pid 21110 exit 0> worker=0
+I, [2015-08-17T16:00:03.601868 #21105]  INFO -- : reaped #<Process::Status: pid 21113 exit 0> worker=1
+I, [2015-08-17T16:00:03.601968 #21105]  INFO -- : master complete
+E, [2015-08-17T16:00:03.683699 #21080] ERROR -- : reaped #<Process::Status: pid 21105 exit 0> exec()-ed
+I, [2015-08-17T16:00:31.286974 #22972]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-17T16:00:31.287546 #22972]  INFO -- : forked child re-executing...
+I, [2015-08-17T16:00:32.078272 #22972]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-17T16:00:32.079368 #22972]  INFO -- : Refreshing Gem list
+I, [2015-08-17T16:00:34.622639 #22972]  INFO -- : worker=0 spawning...
+I, [2015-08-17T16:00:34.625491 #22972]  INFO -- : worker=1 spawning...
+I, [2015-08-17T16:00:34.626044 #22976]  INFO -- : worker=0 spawned pid=22976
+I, [2015-08-17T16:00:34.626904 #22972]  INFO -- : master process ready
+I, [2015-08-17T16:00:34.627906 #22979]  INFO -- : worker=1 spawned pid=22979
+I, [2015-08-17T16:00:34.628725 #22976]  INFO -- : worker=0 ready
+I, [2015-08-17T16:00:34.630441 #22979]  INFO -- : worker=1 ready
+I, [2015-08-17T16:00:39.472794 #22972]  INFO -- : reaped #<Process::Status: pid 22976 exit 0> worker=0
+I, [2015-08-17T16:00:39.473019 #22972]  INFO -- : reaped #<Process::Status: pid 22979 exit 0> worker=1
+I, [2015-08-17T16:00:39.473110 #22972]  INFO -- : master complete
+E, [2015-08-17T16:00:39.534689 #21080] ERROR -- : reaped #<Process::Status: pid 22972 exit 0> exec()-ed
+I, [2015-08-17T16:00:55.636245 #21080]  INFO -- : reaped #<Process::Status: pid 21083 exit 0> worker=0
+I, [2015-08-17T16:00:55.636558 #21080]  INFO -- : reaped #<Process::Status: pid 21086 exit 0> worker=1
+I, [2015-08-17T16:00:55.636756 #21080]  INFO -- : master complete
+I, [2015-08-17T16:01:16.901061 #1454]  INFO -- : Refreshing Gem list
+I, [2015-08-17T16:01:20.662433 #1454]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-17T16:01:20.663310 #1454]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-17T16:01:20.663685 #1454]  INFO -- : worker=0 spawning...
+I, [2015-08-17T16:01:20.668810 #1454]  INFO -- : worker=1 spawning...
+I, [2015-08-17T16:01:20.670186 #1489]  INFO -- : worker=0 spawned pid=1489
+I, [2015-08-17T16:01:20.677242 #1454]  INFO -- : master process ready
+I, [2015-08-17T16:01:20.679240 #1489]  INFO -- : worker=0 ready
+I, [2015-08-17T16:01:20.682535 #1492]  INFO -- : worker=1 spawned pid=1492
+I, [2015-08-17T16:01:20.691533 #1492]  INFO -- : worker=1 ready
+I, [2015-08-17T16:03:37.798792 #2019]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-17T16:03:37.799627 #2019]  INFO -- : forked child re-executing...
+I, [2015-08-17T16:03:38.542883 #2019]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-17T16:03:38.543639 #2019]  INFO -- : Refreshing Gem list
+I, [2015-08-17T16:03:40.802071 #2019]  INFO -- : worker=0 spawning...
+I, [2015-08-17T16:03:40.804203 #2019]  INFO -- : worker=1 spawning...
+I, [2015-08-17T16:03:40.804757 #2023]  INFO -- : worker=0 spawned pid=2023
+I, [2015-08-17T16:03:40.807291 #2023]  INFO -- : worker=0 ready
+I, [2015-08-17T16:03:40.807650 #2019]  INFO -- : master process ready
+I, [2015-08-17T16:03:40.808146 #2026]  INFO -- : worker=1 spawned pid=2026
+I, [2015-08-17T16:03:40.810205 #2026]  INFO -- : worker=1 ready
+E, [2015-08-17T16:06:08.999388 #2019] ERROR -- : old PID:1454 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T16:07:00.006985 #2019] ERROR -- : old PID:1454 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-17T16:08:01.699091 #2019] ERROR -- : old PID:1454 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2015-08-17T16:09:04.667357 #2019]  INFO -- : reaped #<Process::Status: pid 2023 exit 0> worker=0
+I, [2015-08-17T16:09:04.667701 #2019]  INFO -- : reaped #<Process::Status: pid 2026 exit 0> worker=1
+I, [2015-08-17T16:09:04.667885 #2019]  INFO -- : master complete
+E, [2015-08-17T16:09:04.769107 #1454] ERROR -- : reaped #<Process::Status: pid 2019 exit 0> exec()-ed
+I, [2015-08-17T16:12:10.647746 #1454]  INFO -- : reaped #<Process::Status: pid 1489 exit 0> worker=0
+I, [2015-08-17T16:12:10.648257 #1454]  INFO -- : reaped #<Process::Status: pid 1492 exit 0> worker=1
+I, [2015-08-17T16:12:10.648564 #1454]  INFO -- : master complete
+I, [2015-08-17T16:12:35.289145 #1417]  INFO -- : Refreshing Gem list
+I, [2015-08-17T16:12:39.325162 #1417]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-17T16:12:39.326018 #1417]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-17T16:12:39.326366 #1417]  INFO -- : worker=0 spawning...
+I, [2015-08-17T16:12:39.331518 #1417]  INFO -- : worker=1 spawning...
+I, [2015-08-17T16:12:39.332833 #1452]  INFO -- : worker=0 spawned pid=1452
+I, [2015-08-17T16:12:39.339843 #1417]  INFO -- : master process ready
+I, [2015-08-17T16:12:39.343261 #1452]  INFO -- : worker=0 ready
+I, [2015-08-17T16:12:39.346376 #1455]  INFO -- : worker=1 spawned pid=1455
+I, [2015-08-17T16:12:39.355100 #1455]  INFO -- : worker=1 ready
+I, [2015-08-18T10:18:42.659726 #10698]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-18T10:18:42.660644 #10698]  INFO -- : forked child re-executing...
+I, [2015-08-18T10:18:43.385782 #10698]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T10:18:43.386491 #10698]  INFO -- : Refreshing Gem list
+I, [2015-08-18T10:18:45.861893 #10698]  INFO -- : worker=0 spawning...
+I, [2015-08-18T10:18:45.864603 #10698]  INFO -- : worker=1 spawning...
+I, [2015-08-18T10:18:45.865314 #10705]  INFO -- : worker=0 spawned pid=10705
+I, [2015-08-18T10:18:45.869980 #10698]  INFO -- : master process ready
+I, [2015-08-18T10:18:45.871253 #10705]  INFO -- : worker=0 ready
+I, [2015-08-18T10:18:45.872114 #10708]  INFO -- : worker=1 spawned pid=10708
+I, [2015-08-18T10:18:45.875671 #10708]  INFO -- : worker=1 ready
+I, [2015-08-18T10:33:24.925578 #10698]  INFO -- : reaped #<Process::Status: pid 10705 exit 0> worker=0
+I, [2015-08-18T10:33:24.925934 #10698]  INFO -- : reaped #<Process::Status: pid 10708 exit 0> worker=1
+I, [2015-08-18T10:33:24.926153 #10698]  INFO -- : master complete
+E, [2015-08-18T10:33:25.005173 #1417] ERROR -- : reaped #<Process::Status: pid 10698 exit 0> exec()-ed
+I, [2015-08-18T10:33:27.401250 #1417]  INFO -- : reaped #<Process::Status: pid 1452 exit 0> worker=0
+I, [2015-08-18T10:33:27.401586 #1417]  INFO -- : reaped #<Process::Status: pid 1455 exit 0> worker=1
+I, [2015-08-18T10:33:27.401856 #1417]  INFO -- : master complete
+I, [2015-08-18T10:33:51.504774 #1471]  INFO -- : Refreshing Gem list
+I, [2015-08-18T10:33:56.000189 #1471]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T10:33:56.001096 #1471]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T10:33:56.001434 #1471]  INFO -- : worker=0 spawning...
+I, [2015-08-18T10:33:56.007837 #1471]  INFO -- : worker=1 spawning...
+I, [2015-08-18T10:33:56.009053 #1506]  INFO -- : worker=0 spawned pid=1506
+I, [2015-08-18T10:33:56.015312 #1471]  INFO -- : master process ready
+I, [2015-08-18T10:33:56.017974 #1509]  INFO -- : worker=1 spawned pid=1509
+I, [2015-08-18T10:33:56.024856 #1509]  INFO -- : worker=1 ready
+I, [2015-08-18T10:33:56.027106 #1506]  INFO -- : worker=0 ready
+I, [2015-08-18T10:43:42.411774 #2265]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-18T10:43:42.412860 #2265]  INFO -- : forked child re-executing...
+I, [2015-08-18T10:43:42.999908 #2265]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T10:43:43.000234 #2265]  INFO -- : Refreshing Gem list
+I, [2015-08-18T10:43:44.610164 #2265]  INFO -- : worker=0 spawning...
+I, [2015-08-18T10:43:44.613843 #2265]  INFO -- : worker=1 spawning...
+I, [2015-08-18T10:43:44.615082 #2269]  INFO -- : worker=0 spawned pid=2269
+I, [2015-08-18T10:43:44.619260 #2265]  INFO -- : master process ready
+I, [2015-08-18T10:43:44.620777 #2269]  INFO -- : worker=0 ready
+I, [2015-08-18T10:43:44.621448 #2272]  INFO -- : worker=1 spawned pid=2272
+I, [2015-08-18T10:43:44.626545 #2272]  INFO -- : worker=1 ready
+I, [2015-08-18T10:46:07.887728 #2265]  INFO -- : reaped #<Process::Status: pid 2269 exit 0> worker=0
+I, [2015-08-18T10:46:07.888260 #2265]  INFO -- : reaped #<Process::Status: pid 2272 exit 0> worker=1
+I, [2015-08-18T10:46:07.888771 #2265]  INFO -- : master complete
+E, [2015-08-18T10:46:08.016327 #1471] ERROR -- : reaped #<Process::Status: pid 2265 exit 0> exec()-ed
+I, [2015-08-18T10:46:11.042507 #1471]  INFO -- : reaped #<Process::Status: pid 1506 exit 0> worker=0
+I, [2015-08-18T10:46:11.042742 #1471]  INFO -- : reaped #<Process::Status: pid 1509 exit 0> worker=1
+I, [2015-08-18T10:46:11.042929 #1471]  INFO -- : master complete
+I, [2015-08-18T10:46:30.899957 #1531]  INFO -- : Refreshing Gem list
+I, [2015-08-18T10:46:34.838667 #1531]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T10:46:34.839505 #1531]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T10:46:34.839875 #1531]  INFO -- : worker=0 spawning...
+I, [2015-08-18T10:46:34.844894 #1531]  INFO -- : worker=1 spawning...
+I, [2015-08-18T10:46:34.845869 #1567]  INFO -- : worker=0 spawned pid=1567
+I, [2015-08-18T10:46:34.851072 #1531]  INFO -- : master process ready
+I, [2015-08-18T10:46:34.853892 #1570]  INFO -- : worker=1 spawned pid=1570
+I, [2015-08-18T10:46:34.860740 #1570]  INFO -- : worker=1 ready
+I, [2015-08-18T10:46:34.865518 #1567]  INFO -- : worker=0 ready
+I, [2015-08-18T10:47:53.315445 #1903]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-18T10:47:53.316353 #1903]  INFO -- : forked child re-executing...
+I, [2015-08-18T10:47:53.960171 #1903]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T10:47:53.960480 #1903]  INFO -- : Refreshing Gem list
+I, [2015-08-18T10:47:56.232351 #1903]  INFO -- : worker=0 spawning...
+I, [2015-08-18T10:47:56.234164 #1903]  INFO -- : worker=1 spawning...
+I, [2015-08-18T10:47:56.234829 #1907]  INFO -- : worker=0 spawned pid=1907
+I, [2015-08-18T10:47:56.235815 #1903]  INFO -- : master process ready
+I, [2015-08-18T10:47:56.237028 #1910]  INFO -- : worker=1 spawned pid=1910
+I, [2015-08-18T10:47:56.238130 #1907]  INFO -- : worker=0 ready
+I, [2015-08-18T10:47:56.240278 #1910]  INFO -- : worker=1 ready
+E, [2015-08-18T11:10:36.293769 #1903] ERROR -- : old PID:1531 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-18T11:11:15.896888 #1903] ERROR -- : old PID:1531 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-18T11:21:45.391489 #1903] ERROR -- : old PID:1531 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-18T11:24:47.589877 #1903] ERROR -- : old PID:1531 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2015-08-18T11:27:39.148227 #1903] ERROR -- : old PID:1531 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2015-08-18T11:28:01.867945 #1903]  INFO -- : reaped #<Process::Status: pid 1907 exit 0> worker=0
+I, [2015-08-18T11:28:01.868754 #1903]  INFO -- : reaped #<Process::Status: pid 1910 exit 0> worker=1
+I, [2015-08-18T11:28:01.869545 #1903]  INFO -- : master complete
+E, [2015-08-18T11:28:02.043203 #1531] ERROR -- : reaped #<Process::Status: pid 1903 exit 0> exec()-ed
+I, [2015-08-18T11:28:04.351263 #1531]  INFO -- : reaped #<Process::Status: pid 1567 exit 0> worker=0
+I, [2015-08-18T11:28:04.352369 #1531]  INFO -- : reaped #<Process::Status: pid 1570 exit 0> worker=1
+I, [2015-08-18T11:28:04.352940 #1531]  INFO -- : master complete
+I, [2015-08-18T11:28:24.160370 #1347]  INFO -- : Refreshing Gem list
+I, [2015-08-18T11:28:27.247248 #1347]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T11:28:27.247646 #1347]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T11:28:27.247826 #1347]  INFO -- : worker=0 spawning...
+I, [2015-08-18T11:28:27.250039 #1347]  INFO -- : worker=1 spawning...
+I, [2015-08-18T11:28:27.250635 #1351]  INFO -- : worker=0 spawned pid=1351
+I, [2015-08-18T11:28:27.252257 #1347]  INFO -- : master process ready
+I, [2015-08-18T11:28:27.254998 #1351]  INFO -- : worker=0 ready
+I, [2015-08-18T11:28:27.256106 #1354]  INFO -- : worker=1 spawned pid=1354
+I, [2015-08-18T11:28:27.260795 #1354]  INFO -- : worker=1 ready
+I, [2015-08-18T11:43:36.873247 #8568]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-18T11:43:36.874027 #8568]  INFO -- : forked child re-executing...
+I, [2015-08-18T11:43:37.669082 #8568]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T11:43:37.669938 #8568]  INFO -- : Refreshing Gem list
+I, [2015-08-18T11:43:39.411255 #8568]  INFO -- : worker=0 spawning...
+I, [2015-08-18T11:43:39.413660 #8568]  INFO -- : worker=1 spawning...
+I, [2015-08-18T11:43:39.415447 #8573]  INFO -- : worker=0 spawned pid=8573
+I, [2015-08-18T11:43:39.421991 #8568]  INFO -- : master process ready
+I, [2015-08-18T11:43:39.423799 #8573]  INFO -- : worker=0 ready
+I, [2015-08-18T11:43:39.424687 #8576]  INFO -- : worker=1 spawned pid=8576
+I, [2015-08-18T11:43:39.436030 #8576]  INFO -- : worker=1 ready
+E, [2015-08-18T11:46:35.725527 #8568] ERROR -- : old PID:1347 running with existing pid=/var/www/rchat/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2015-08-18T11:54:45.519957 #8568]  INFO -- : reaped #<Process::Status: pid 8573 exit 0> worker=0
+I, [2015-08-18T11:54:45.520760 #8568]  INFO -- : reaped #<Process::Status: pid 8576 exit 0> worker=1
+I, [2015-08-18T11:54:45.521694 #8568]  INFO -- : master complete
+E, [2015-08-18T11:54:45.694818 #1347] ERROR -- : reaped #<Process::Status: pid 8568 exit 0> exec()-ed
+I, [2015-08-18T11:54:47.924973 #1347]  INFO -- : reaped #<Process::Status: pid 1351 exit 0> worker=0
+I, [2015-08-18T11:54:47.925280 #1347]  INFO -- : reaped #<Process::Status: pid 1354 exit 0> worker=1
+I, [2015-08-18T11:54:47.925800 #1347]  INFO -- : master complete
+I, [2015-08-18T11:55:06.805936 #1323]  INFO -- : Refreshing Gem list
+I, [2015-08-18T11:55:08.436453 #1323]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T11:55:08.436894 #1323]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T11:55:08.437100 #1323]  INFO -- : worker=0 spawning...
+I, [2015-08-18T11:55:08.439201 #1323]  INFO -- : worker=1 spawning...
+I, [2015-08-18T11:55:08.439780 #1358]  INFO -- : worker=0 spawned pid=1358
+I, [2015-08-18T11:55:08.442701 #1323]  INFO -- : master process ready
+I, [2015-08-18T11:55:08.444331 #1361]  INFO -- : worker=1 spawned pid=1361
+I, [2015-08-18T11:55:08.448488 #1361]  INFO -- : worker=1 ready
+I, [2015-08-18T11:55:08.452974 #1358]  INFO -- : worker=0 ready
+I, [2015-08-18T12:16:09.621717 #1323]  INFO -- : reaped #<Process::Status: pid 1358 exit 0> worker=0
+I, [2015-08-18T12:16:09.622154 #1323]  INFO -- : reaped #<Process::Status: pid 1361 exit 0> worker=1
+I, [2015-08-18T12:16:09.622372 #1323]  INFO -- : master complete
+I, [2015-08-18T12:16:33.026731 #1467]  INFO -- : Refreshing Gem list
+I, [2015-08-18T12:16:37.006244 #1467]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T12:16:37.007059 #1467]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T12:16:37.007333 #1467]  INFO -- : worker=0 spawning...
+I, [2015-08-18T12:16:37.011446 #1467]  INFO -- : worker=1 spawning...
+I, [2015-08-18T12:16:37.012558 #1502]  INFO -- : worker=0 spawned pid=1502
+I, [2015-08-18T12:16:37.017614 #1467]  INFO -- : master process ready
+I, [2015-08-18T12:16:37.019713 #1502]  INFO -- : worker=0 ready
+I, [2015-08-18T12:16:37.021674 #1505]  INFO -- : worker=1 spawned pid=1505
+I, [2015-08-18T12:16:37.028062 #1505]  INFO -- : worker=1 ready
+I, [2015-08-18T12:19:45.588256 #2032]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-18T12:19:45.589093 #2032]  INFO -- : forked child re-executing...
+I, [2015-08-18T12:19:46.284363 #2032]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T12:19:46.285055 #2032]  INFO -- : Refreshing Gem list
+I, [2015-08-18T12:19:47.855180 #2032]  INFO -- : worker=0 spawning...
+I, [2015-08-18T12:19:47.857324 #2032]  INFO -- : worker=1 spawning...
+I, [2015-08-18T12:19:47.858040 #2036]  INFO -- : worker=0 spawned pid=2036
+I, [2015-08-18T12:19:47.859225 #2032]  INFO -- : master process ready
+I, [2015-08-18T12:19:47.860530 #2039]  INFO -- : worker=1 spawned pid=2039
+I, [2015-08-18T12:19:47.861992 #2036]  INFO -- : worker=0 ready
+I, [2015-08-18T12:19:47.864446 #2039]  INFO -- : worker=1 ready
+I, [2015-08-18T12:20:12.545050 #2032]  INFO -- : reaped #<Process::Status: pid 2036 exit 0> worker=0
+I, [2015-08-18T12:20:12.545212 #2032]  INFO -- : reaped #<Process::Status: pid 2039 exit 0> worker=1
+I, [2015-08-18T12:20:12.545299 #2032]  INFO -- : master complete
+E, [2015-08-18T12:20:12.600352 #1467] ERROR -- : reaped #<Process::Status: pid 2032 exit 0> exec()-ed
+I, [2015-08-18T12:20:15.038186 #1467]  INFO -- : reaped #<Process::Status: pid 1505 exit 0> worker=1
+I, [2015-08-18T12:20:15.138838 #1467]  INFO -- : reaped #<Process::Status: pid 1502 exit 0> worker=0
+I, [2015-08-18T12:20:15.139144 #1467]  INFO -- : master complete
+I, [2015-08-18T12:20:34.140645 #1470]  INFO -- : Refreshing Gem list
+I, [2015-08-18T12:20:37.159517 #1470]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T12:20:37.160206 #1470]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T12:20:37.160510 #1470]  INFO -- : worker=0 spawning...
+I, [2015-08-18T12:20:37.164958 #1470]  INFO -- : worker=1 spawning...
+I, [2015-08-18T12:20:37.166887 #1474]  INFO -- : worker=0 spawned pid=1474
+I, [2015-08-18T12:20:37.169504 #1470]  INFO -- : master process ready
+I, [2015-08-18T12:20:37.172073 #1477]  INFO -- : worker=1 spawned pid=1477
+I, [2015-08-18T12:20:37.178551 #1477]  INFO -- : worker=1 ready
+I, [2015-08-18T12:20:37.181734 #1474]  INFO -- : worker=0 ready
+I, [2015-08-18T12:26:34.997618 #2059]  INFO -- : executing ["/home/tim/.rbenv/versions/2.2.1/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/var/www/rchat/shared/sockets/unicorn.sock>}] (in /var/www/rchat)
+I, [2015-08-18T12:26:34.998326 #2059]  INFO -- : forked child re-executing...
+I, [2015-08-18T12:26:35.647793 #2059]  INFO -- : inherited addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T12:26:35.648314 #2059]  INFO -- : Refreshing Gem list
+I, [2015-08-18T12:26:38.260144 #2059]  INFO -- : worker=0 spawning...
+I, [2015-08-18T12:26:38.264645 #2059]  INFO -- : worker=1 spawning...
+I, [2015-08-18T12:26:38.265910 #2066]  INFO -- : worker=0 spawned pid=2066
+I, [2015-08-18T12:26:38.268775 #2059]  INFO -- : master process ready
+I, [2015-08-18T12:26:38.271050 #2069]  INFO -- : worker=1 spawned pid=2069
+I, [2015-08-18T12:26:38.274390 #2066]  INFO -- : worker=0 ready
+I, [2015-08-18T12:26:38.278778 #2069]  INFO -- : worker=1 ready
+I, [2015-08-18T12:28:38.137346 #2059]  INFO -- : reaped #<Process::Status: pid 2066 exit 0> worker=0
+I, [2015-08-18T12:28:38.238232 #2059]  INFO -- : reaped #<Process::Status: pid 2069 exit 0> worker=1
+I, [2015-08-18T12:28:38.238460 #2059]  INFO -- : master complete
+E, [2015-08-18T12:28:38.304688 #1470] ERROR -- : reaped #<Process::Status: pid 2059 exit 0> exec()-ed
+I, [2015-08-18T12:28:40.930561 #1470]  INFO -- : reaped #<Process::Status: pid 1474 exit 0> worker=0
+I, [2015-08-18T12:28:40.930970 #1470]  INFO -- : reaped #<Process::Status: pid 1477 exit 0> worker=1
+I, [2015-08-18T12:28:40.931521 #1470]  INFO -- : master complete
+I, [2015-08-18T12:28:59.597722 #1420]  INFO -- : Refreshing Gem list
+I, [2015-08-18T12:29:02.987253 #1420]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T12:29:02.987953 #1420]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T12:29:02.988239 #1420]  INFO -- : worker=0 spawning...
+I, [2015-08-18T12:29:02.990769 #1420]  INFO -- : worker=1 spawning...
+I, [2015-08-18T12:29:02.991652 #1424]  INFO -- : worker=0 spawned pid=1424
+I, [2015-08-18T12:29:02.994818 #1420]  INFO -- : master process ready
+I, [2015-08-18T12:29:02.996830 #1424]  INFO -- : worker=0 ready
+I, [2015-08-18T12:29:02.998290 #1427]  INFO -- : worker=1 spawned pid=1427
+I, [2015-08-18T12:29:03.002969 #1427]  INFO -- : worker=1 ready
+I, [2015-08-18T13:05:18.302500 #1420]  INFO -- : reaped #<Process::Status: pid 1424 exit 0> worker=0
+I, [2015-08-18T13:05:18.302888 #1420]  INFO -- : reaped #<Process::Status: pid 1427 exit 0> worker=1
+I, [2015-08-18T13:05:18.303022 #1420]  INFO -- : master complete
+I, [2015-08-18T13:05:22.120090 #2765]  INFO -- : Refreshing Gem list
+I, [2015-08-18T13:05:23.591903 #2765]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T13:05:23.592147 #2765]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T13:05:23.592288 #2765]  INFO -- : worker=0 spawning...
+I, [2015-08-18T13:05:23.594262 #2765]  INFO -- : worker=1 spawning...
+I, [2015-08-18T13:05:23.594981 #2768]  INFO -- : worker=0 spawned pid=2768
+I, [2015-08-18T13:05:23.596732 #2765]  INFO -- : master process ready
+I, [2015-08-18T13:05:23.597636 #2771]  INFO -- : worker=1 spawned pid=2771
+I, [2015-08-18T13:05:23.600306 #2771]  INFO -- : worker=1 ready
+I, [2015-08-18T13:05:23.601557 #2768]  INFO -- : worker=0 ready
+I, [2015-08-18T13:06:03.639031 #2765]  INFO -- : reaped #<Process::Status: pid 2768 exit 0> worker=0
+I, [2015-08-18T13:06:03.639263 #2765]  INFO -- : reaped #<Process::Status: pid 2771 exit 0> worker=1
+I, [2015-08-18T13:06:03.639422 #2765]  INFO -- : master complete
+I, [2015-08-18T13:06:09.002466 #2941]  INFO -- : Refreshing Gem list
+I, [2015-08-18T13:06:10.522790 #2941]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T13:06:10.523025 #2941]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T13:06:10.523178 #2941]  INFO -- : worker=0 spawning...
+I, [2015-08-18T13:06:10.525039 #2941]  INFO -- : worker=1 spawning...
+I, [2015-08-18T13:06:10.525518 #2945]  INFO -- : worker=0 spawned pid=2945
+I, [2015-08-18T13:06:10.526285 #2941]  INFO -- : master process ready
+I, [2015-08-18T13:06:10.527193 #2948]  INFO -- : worker=1 spawned pid=2948
+I, [2015-08-18T13:06:10.530218 #2948]  INFO -- : worker=1 ready
+I, [2015-08-18T13:06:10.532674 #2945]  INFO -- : worker=0 ready
+I, [2015-08-18T13:06:27.015596 #2941]  INFO -- : reaped #<Process::Status: pid 2945 exit 0> worker=0
+I, [2015-08-18T13:06:27.015889 #2941]  INFO -- : reaped #<Process::Status: pid 2948 exit 0> worker=1
+I, [2015-08-18T13:06:27.016031 #2941]  INFO -- : master complete
+I, [2015-08-18T13:06:49.159387 #1354]  INFO -- : Refreshing Gem list
+I, [2015-08-18T13:06:52.848957 #1354]  INFO -- : unlinking existing socket=/var/www/rchat/shared/sockets/unicorn.sock
+I, [2015-08-18T13:06:52.849717 #1354]  INFO -- : listening on addr=/var/www/rchat/shared/sockets/unicorn.sock fd=11
+I, [2015-08-18T13:06:52.850008 #1354]  INFO -- : worker=0 spawning...
+I, [2015-08-18T13:06:52.853826 #1354]  INFO -- : worker=1 spawning...
+I, [2015-08-18T13:06:52.854992 #1389]  INFO -- : worker=0 spawned pid=1389
+I, [2015-08-18T13:06:52.858193 #1354]  INFO -- : master process ready
+I, [2015-08-18T13:06:52.860859 #1392]  INFO -- : worker=1 spawned pid=1392
+I, [2015-08-18T13:06:52.868293 #1392]  INFO -- : worker=1 ready
+I, [2015-08-18T13:06:52.872186 #1389]  INFO -- : worker=0 ready
