@@ -35,6 +35,7 @@ class ChatController < WebsocketRails::BaseController
   def delete_user
   	puts 'Delete user action'
     users = connection_store.collect_all(:chat_users)
-    WebsocketRails[:chatroom].trigger(:client_disconnected, users.to_json)
+    WebsocketRails[:chatroom].trigger(:client_disconnected, users.to_json) 
   end
+
 end
