@@ -79,14 +79,12 @@ $(document).on('ready', function() {
 
 		function userConnected(connectedUser) {
 			if (!loggedInUsers[connectedUser.username]) {
-				console.log('User named ' + connectedUser.username + ' connected.')
 				loggedInUsers[connectedUser.username] = connectedUser;	
 			}
 		}
 
 		function userDisconnected(disconnectedUser) {
 			if (loggedInUsers[disconnectedUser.username]) {
-				console.log('User named ' + disconnectedUser.username + ' disconnected.')
 				delete loggedInUsers[disconnectedUser.username];
 			}
 		}
@@ -155,40 +153,30 @@ $(document).on('ready', function() {
 		function checkDisconnection(testingUser) {
 			//Make sure we only run test for users who are not currently being tested.
 			if (loggedInUsers[testingUser.username] && loggedInUsers[testingUser.username].testingDisconnection == true && testingUser.username != user.username) {
-				console.log('Disconnection test for ' + testingUser.username + ' already running. Cancelling test.');
 				return;
 			} else {
-				console.log('Disconnection test for ' + testingUser.username + ' not currently running, running test now.');
 				loggedInUsers[testingUser.username].testingDisconnection = true;
 			}
-			
-			console.log('testingUser:')
-			console.log(testingUser);
-			console.log('loggedInUsers before disconnection test');
-			console.log(loggedInUsers);
 
 			//Don't delete current logged in user from loggedInUsers array,
 			//as they must be currently logged in to be running this test.
 			if (testingUser.username != user.username) {
-				console.log('testingUser.username before deletion: ' + testingUser.username);
-				console.log('user.username before deletion: ' + user.username);
+				//Temporarily remove the user we're testing from the list of logged in users.
+				//If they stay disconnected they won't be repopulated. If they do reconnect, they'll be added back in anyway.
 				delete loggedInUsers[testingUser.username];	
 			}	else {
-
-				console.log('User not deleted as user is the same as testing user.')
 				return;
 			}
 			
-			console.log('starting disconnection test');
+			//In 2 seconds, check to see whether or not user has reconnected. This would indicate that the user disconnection message
+			//was triggered only due to a browser refresh, not due to a genuine disconnection.
 			setTimeout(function(){
-				console.log('loggedInUsers contains the following right before disconnection test, and we are looking for user ' + testingUser.username + ':');
-				console.log(loggedInUsers);
 				if (!loggedInUsers[testingUser.username]) {
-					console.log('user disconnection test showed user ' + testingUser.username + ' is no longer connected');
+					//Test showed that testingUser is in fact no longer connected
 					userDisconnectedMessage(testingUser);
 					userDisconnected(testingUser);
 				} else {
-					console.log('user disconnection test showed user ' + testingUser.username + ' is still connected.');
+					//Test showed that testingUser is still connected, don't remove them from client list.
 					loggedInUsers[testingUser.username].testingDisconnection = false;
 				}
 			}, 2000);
@@ -197,26 +185,17 @@ $(document).on('ready', function() {
 		channel.bind('client_disconnected', function(message) {
 			var chatUsers = '';
 
-			console.log('message from server of logged in users.');
-			console.log(message);
-
+			//message should contain list of users currently connected to websockets according to server.
 			var json = JSON.parse(message);
-
-			console.log('json from message sent to client_disconnected');
-			console.log(json);
 			
+			//Test each loggedInUser to see if server still has them in connected users registry
 			if (Array.isArray(json)) {
 				var i = 0;
 				for (var index in loggedInUsers) {
-					console.log(loggedInUsers[index]);
 					if (json[i]) {
 						chatUsers += '<li>' + json[i].username + '</li>';	
 					}
 					if (json.indexOf(loggedInUsers[index].username) == -1 && loggedInUsers[index].username != user.username) {
-						
-						
-						
-						console.log('checking to see if ' + loggedInUsers[index].username + ' has really disconnected.')
 						checkDisconnection(loggedInUsers[index]);
 					}
 					i++;
