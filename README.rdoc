@@ -1,7 +1,0 @@
-== RChat
-
-A simple websockets chat platform built with Ruby on Rails.
-
-Rchat is an exploration of using websockets in a Ruby on Rails context. This simple app provides a single-room chat server with basic user authentication. It is as no-frills as a chat server can get.
-
-Whee!
