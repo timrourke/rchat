@@ -56,10 +56,6 @@ $(document).on('ready', function() {
 
 			var messageItem = $('<li class="chat__system"><em>' + connectedUser.username + ' has joined chat.</em></li>')
 
-			// $chatMessagesPane.animate({
-			// 	scrollTop: $chatMessagesPane.height()
-			// }, 10);
-
 			$chatMessages.append(messageItem);
 
 			$(messageItem).velocity("scroll", { container: $('#js-chat-messages-pane') });
@@ -81,6 +77,10 @@ $(document).on('ready', function() {
 			if (!loggedInUsers[connectedUser.username]) {
 				loggedInUsers[connectedUser.username] = connectedUser;	
 			}
+			if (loggedInUsers.length > 0 && (loggedInUsers[connectedUser.username].testingDisconnection == true || loggedInUsers[connectedUser.username].testingDisconnection == false)) {
+				return;
+			}
+			userConnectedMessage(connectedUser);
 		}
 
 		function userDisconnected(disconnectedUser) {
@@ -134,15 +134,21 @@ $(document).on('ready', function() {
 				for (var index in json) {
 					if (json[index].hasOwnProperty('username')) {
 						chatUsers += '<li>' + json[index].username + '</li>';
-						userConnectedMessage(json[index]);
-						userConnected(json[index]);	
+
+						console.log(loggedInUsers);
+
+						console.log(loggedInUsers[json[index].username]);
+						
+						userConnected(json[index]);		
 					}
 				}					
 			} else {
 				if (json.hasOwnProperty('username')) {
 					chatUsers += '<li>' + json.username + '</li>';
-					userConnectedMessage(json);
-					userConnected(json);	
+
+					console.log(loggedInUsers[json[index].username]);
+				
+					userConnected(json);		
 				}
 			}
 			
